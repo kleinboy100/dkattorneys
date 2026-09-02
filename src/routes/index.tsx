@@ -113,7 +113,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div className="mt-12 grid border-4 border-ink md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-1 bg-ink p-1 md:grid-cols-2 lg:grid-cols-4">
             <PracticeAreaCard
               number="01"
               title="Personal Injury & Claims"
@@ -133,7 +133,6 @@ function HomePage() {
               number="04"
               title="Commercial & Financial"
               description="Commercial law, drafting contracts, and credit matters for businesses and individuals."
-              last
             />
           </div>
 
@@ -155,19 +154,13 @@ function PracticeAreaCard({
   number,
   title,
   description,
-  last = false,
 }: {
   number: string;
   title: string;
   description: string;
-  last?: boolean;
 }) {
   return (
-    <article
-      className={`group relative bg-paper p-8 transition-colors duration-300 hover:bg-brand ${
-        last ? "" : "border-b-4 border-ink md:border-b-4 lg:border-b-0 lg:border-r-4"
-      } ${"md:[&:nth-child(-n+2)]:border-b-4 lg:[&:nth-child(-n+2)]:border-b-0"} md:odd:border-r-0 lg:odd:border-r-4 md:[&:nth-child(odd)]:border-r-4 md:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r-4`}
-    >
+    <article className="group relative bg-paper p-8 outline outline-2 -outline-offset-2 outline-ink transition-colors duration-300 hover:bg-brand">
       <span className="font-display text-5xl text-ink/10 transition-colors group-hover:text-paper/30">
         {number}
       </span>

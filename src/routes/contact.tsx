@@ -18,21 +18,29 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   return (
     <section className="bg-ink text-paper">
+      {/* Page banner */}
+      <div className="border-b-4 border-brand px-6 py-14">
+        <div className="mx-auto max-w-6xl">
+          <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand">
+            (c) Contact
+          </p>
+          <h1 className="mt-4 font-display text-4xl uppercase leading-[0.95] tracking-tight md:text-6xl">
+            Get in touch
+            <br />
+            with us.
+          </h1>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-              (c) Contact
-            </p>
-            <h1 className="mt-5 text-balance font-display text-4xl font-bold italic tracking-tight text-paper md:text-5xl">
-              Get in touch with us.
-            </h1>
-            <div className="mt-10 space-y-6 font-sans text-sm">
-              <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+            <div className="space-y-0 border-4 border-paper">
+              <div className="border-b-4 border-paper p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-brand">
                   Visit
                 </p>
-                <p className="mt-1 text-paper/90">
+                <p className="mt-2 font-sans text-lg font-bold leading-snug">
                   36 Leask Street
                   <br />
                   Klerksdorp CBD, 2570
@@ -40,41 +48,42 @@ function ContactPage() {
                   South Africa
                 </p>
               </div>
-              <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+              <div className="border-b-4 border-paper p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-brand">
                   Hours
                 </p>
-                <p className="mt-1 text-paper/90">Mon–Fri · 08:00–17:00</p>
+                <p className="mt-2 font-sans text-lg font-bold">Mon–Fri · 08:00–17:00</p>
               </div>
-              <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+              <div className="p-6">
+                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-brand">
                   Connect
                 </p>
                 <a
                   href="https://www.facebook.com/p/Diteboho-Kotoane-Attorneys-Incorporated-100083405829211/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                  className="mt-2 inline-block font-sans text-lg font-bold underline decoration-brand decoration-2 underline-offset-4 transition-colors hover:text-brand"
                 >
-                  Diteboho Kotoane Attorneys Incorporated on Facebook
+                  Facebook — Diteboho Kotoane Attorneys Incorporated
                 </a>
               </div>
             </div>
-            <div className="mt-10">
+            <div className="mt-8">
               <a
                 href="mailto:info@dkattorneys.co.za?subject=Consultation%20Request"
-                className="inline-block bg-brand px-7 py-3.5 font-sans text-sm font-semibold tracking-wide text-white transition-colors hover:bg-paper hover:text-ink"
+                className="inline-block bg-brand px-8 py-4 font-sans text-sm font-bold uppercase tracking-[0.14em] text-paper transition-colors hover:bg-paper hover:text-ink"
               >
                 Schedule a Consultation
               </a>
             </div>
           </div>
+
           <div className="md:col-span-7">
             <a
               href="https://www.google.com/maps/search/?api=1&query=36+Leask+Street,+Klerksdorp+CBD,+2570"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative block overflow-hidden rounded-lg outline outline-1 -outline-offset-1 outline-white/10"
+              className="group relative block border-4 border-paper"
             >
               <img
                 src={mapImage}
@@ -84,13 +93,13 @@ function ContactPage() {
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-ink/20 opacity-0 transition-opacity group-hover:opacity-100">
-                <span className="bg-paper px-4 py-2 font-sans text-sm font-medium text-ink">
+              <div className="absolute inset-0 flex items-center justify-center bg-ink/30 opacity-0 transition-opacity group-hover:opacity-100">
+                <span className="bg-brand px-5 py-3 font-sans text-sm font-bold uppercase tracking-wide text-paper">
                   View on Google Maps
                 </span>
               </div>
             </a>
-            <p className="mt-3 font-sans text-xs text-paper/45">
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
               36 Leask Street, Klerksdorp CBD, 2570 · Click the map to open Google Maps.
             </p>
           </div>
