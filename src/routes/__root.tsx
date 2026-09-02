@@ -118,6 +118,8 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
@@ -145,7 +147,49 @@ function Header() {
             Schedule a Consultation
           </Link>
         </nav>
+        <button
+          type="button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex h-10 w-10 items-center justify-center text-ink md:hidden"
+        >
+          {open ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 12h16" />
+              <path d="M4 18h16" />
+              <path d="M4 6h16" />
+            </svg>
+          )}
+        </button>
       </div>
+      {open && (
+        <nav className="border-t border-line bg-paper px-6 py-6 md:hidden">
+          <div className="flex flex-col gap-4 font-sans text-base font-medium text-ink">
+            <Link to="/about" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              About
+            </Link>
+            <Link to="/services" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              Practice Areas
+            </Link>
+            <Link to="/contact" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              Contact
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex items-center justify-center bg-ink px-4 py-3 text-sm text-paper transition-colors hover:bg-brand"
+            >
+              Schedule a Consultation
+            </Link>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
