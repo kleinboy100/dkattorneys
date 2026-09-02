@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import logoAsset from "../assets/logo.png.asset.json";
 
 function NotFoundComponent() {
   return (
@@ -87,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -120,13 +121,12 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link to="/" className="flex items-baseline gap-3">
-          <span className="font-display text-xl font-extrabold tracking-tight text-ink">
-            Ditebogo Kotoane
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
-            Attorneys Inc.
-          </span>
+        <Link to="/" className="flex items-center">
+          <img
+            src={logoAsset.url}
+            alt="Diteboho Kotoane Attorneys Inc."
+            className="h-10 w-auto"
+          />
         </Link>
         <nav className="hidden items-center gap-8 font-sans text-sm font-medium text-ink md:flex">
           <Link to="/about" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
