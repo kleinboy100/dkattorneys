@@ -7,7 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -118,6 +118,8 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-6">
@@ -128,13 +130,7 @@ function Header() {
             className="h-14 w-auto"
           />
         </Link>
-        <nav className="flex min-w-0 flex-wrap items-center justify-end gap-x-4 gap-y-2 font-sans text-sm font-medium text-ink md:gap-8">
-          <Link to="/about" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
-            About
-          </Link>
-          <Link to="/contact" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
-            Contact
-          </Link>
+        <nav className="flex min-w-0 items-center justify-end gap-3 font-sans text-sm font-medium text-ink">
           <Link
             to="/contact"
             className="shrink-0 bg-ink px-4 py-2 text-sm text-paper transition-colors hover:bg-brand"
@@ -142,6 +138,60 @@ function Header() {
             <span className="sm:hidden">Schedule</span>
             <span className="hidden sm:inline">Schedule a Consultation</span>
           </Link>
+
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setMenuOpen((open) => !open)}
+              aria-label="Open navigation menu"
+              aria-expanded={menuOpen}
+              className="inline-flex h-10 w-10 items-center justify-center border border-line bg-paper text-ink transition-colors hover:bg-secondary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="h-5 w-5"
+              >
+                {menuOpen ? (
+                  <path strokeLinecap="square" strokeLinejoin="miter" d="M18 6 6 18M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="square" strokeLinejoin="miter" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                )}
+              </svg>
+            </button>
+
+            {menuOpen && (
+              <div className="absolute right-0 top-full mt-2 w-56 border border-line bg-paper shadow-lg">
+                <Link
+                  to="/about"
+                  onClick={() => setMenuOpen(false)}
+                  className="block border-b border-line px-5 py-3 text-sm text-ink transition-colors hover:bg-secondary hover:text-brand"
+                  activeProps={{ className: "block border-b border-line px-5 py-3 text-sm text-brand hover:bg-secondary" }}
+                >
+                  About
+                </Link>
+                <Link
+                  to="/services"
+                  onClick={() => setMenuOpen(false)}
+                  className="block border-b border-line px-5 py-3 text-sm text-ink transition-colors hover:bg-secondary hover:text-brand"
+                  activeProps={{ className: "block border-b border-line px-5 py-3 text-sm text-brand hover:bg-secondary" }}
+                >
+                  Practice Areas
+                </Link>
+                <Link
+                  to="/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-5 py-3 text-sm text-ink transition-colors hover:bg-secondary hover:text-brand"
+                  activeProps={{ className: "block px-5 py-3 text-sm text-brand hover:bg-secondary" }}
+                >
+                  Contact
+                </Link>
+              </div>
+            )}
+          </div>
         </nav>
       </div>
     </header>
