@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ditebogo Kotoane Attorneys Inc." },
+      { title: "Diteboho Kotoane Attorneys Inc." },
       { name: "description", content: "Professional legal services in Klerksdorp and across South Africa." },
-      { name: "author", content: "Ditebogo Kotoane Attorneys Inc." },
-      { property: "og:title", content: "Ditebogo Kotoane Attorneys Inc." },
+      { name: "author", content: "Diteboho Kotoane Attorneys Inc." },
+      { property: "og:title", content: "Diteboho Kotoane Attorneys Inc." },
       { property: "og:description", content: "Professional legal services in Klerksdorp and across South Africa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -156,7 +156,7 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 md:flex-row md:items-center">
         <div className="flex items-baseline gap-3">
           <span className="font-display text-lg font-extrabold tracking-tight">
-            Ditebogo Kotoane
+            Diteboho Kotoane
           </span>
           <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
             Attorneys Inc.
@@ -170,7 +170,7 @@ function Footer() {
             info@dkattorney.co.za
           </a>
           <p>
-            © {new Date().getFullYear()} Ditebogo Kotoane Attorneys Inc. · Klerksdorp, South Africa
+            © {new Date().getFullYear()} Diteboho Kotoane Attorneys Inc. · Klerksdorp, South Africa
           </p>
         </div>
       </div>

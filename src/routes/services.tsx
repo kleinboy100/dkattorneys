@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Practice Areas — Ditebogo Kotoane Attorneys Inc." },
-      { name: "description", content: "Explore the legal services offered by Ditebogo Kotoane Attorneys Inc.: personal injury, litigation, family law, and commercial law." },
-      { property: "og:title", content: "Practice Areas — Ditebogo Kotoane Attorneys Inc." },
-      { property: "og:description", content: "Explore the legal services offered by Ditebogo Kotoane Attorneys Inc.: personal injury, litigation, family law, and commercial law." },
+      { title: "Practice Areas — Diteboho Kotoane Attorneys Inc." },
+      { name: "description", content: "Explore the legal services offered by Diteboho Kotoane Attorneys Inc.: personal injury, litigation, family law, and commercial law." },
+      { property: "og:title", content: "Practice Areas — Diteboho Kotoane Attorneys Inc." },
+      { property: "og:description", content: "Explore the legal services offered by Diteboho Kotoane Attorneys Inc.: personal injury, litigation, family law, and commercial law." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
