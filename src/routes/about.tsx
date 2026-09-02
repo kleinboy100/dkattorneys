@@ -82,6 +82,8 @@ function AboutPage() {
         </div>
       </div>
     </section>
+    <TeamSection />
+    </>
   );
 }
 
