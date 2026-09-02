@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import founderAsset from "../assets/founder.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
 import attorneyAsset from "../assets/attorney.jpg.asset.json";
+import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,7 +52,7 @@ function HomePage() {
         </div>
         <div className="mx-auto max-w-6xl px-6 pb-20">
           <img
-            src={teamAsset.url}
+            src={assetUrl(teamAsset)}
             alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
             loading="eager"
             width={1200}
@@ -86,7 +87,7 @@ function HomePage() {
             </div>
             <div className="md:col-span-5">
               <img
-                src={founderAsset.url}
+                src={assetUrl(founderAsset)}
                 alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
                 loading="lazy"
                 width={1024}
@@ -116,7 +117,7 @@ function HomePage() {
             </div>
             <div className="md:col-span-5">
               <img
-                src={attorneyAsset.url}
+                src={assetUrl(attorneyAsset)}
                 alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
                 loading="lazy"
                 width={1200}
