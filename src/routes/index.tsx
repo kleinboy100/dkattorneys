@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import founderAsset from "../assets/founder.jpg.asset.json";
+import teamAsset from "../assets/team.jpg.asset.json";
+import attorneyAsset from "../assets/attorney.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,7 +22,7 @@ function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-paper">
-        <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-20 text-center">
+        <div className="relative mx-auto max-w-6xl px-6 pb-12 pt-20 text-center">
           <div className="pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none whitespace-nowrap font-display text-[24vw] font-extrabold leading-none text-ink/[0.04]">
             DK
           </div>
@@ -46,23 +49,51 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className="mx-auto max-w-6xl px-6 pb-20">
+          <img
+            src={teamAsset.url}
+            alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
+            loading="eager"
+            width={1920}
+            height={1080}
+            className="animate-rise-late aspect-[21/9] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            style={{ animationDelay: "360ms" }}
+          />
+        </div>
       </section>
 
       {/* Core Value Statement */}
       <section className="border-y border-line bg-paper">
-        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-          <p className="animate-rise mx-auto max-w-[60ch] text-balance font-display text-2xl font-semibold italic leading-relaxed text-ink md:text-3xl">
-            At Ditebogo Kotoane Attorneys Inc., we believe that legal representation
-            should be precise, empathetic, and relentlessly focused on protecting
-            your rights.
-          </p>
-          <div className="animate-rise-late mt-10">
-            <Link
-              to="/about"
-              className="inline-block border border-line bg-paper px-6 py-3 font-sans text-sm font-semibold text-ink transition-colors hover:bg-secondary"
-            >
-              Learn More About Us
-            </Link>
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid items-center gap-12 md:grid-cols-12">
+            <div className="md:col-span-7">
+              <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
+                Our Approach
+              </p>
+              <p className="mt-5 text-balance font-display text-2xl font-semibold italic leading-relaxed text-ink md:text-3xl">
+                At Ditebogo Kotoane Attorneys Inc., we believe that legal representation
+                should be precise, empathetic, and relentlessly focused on protecting
+                your rights.
+              </p>
+              <div className="mt-10">
+                <Link
+                  to="/about"
+                  className="inline-block border border-line bg-paper px-6 py-3 font-sans text-sm font-semibold text-ink transition-colors hover:bg-secondary"
+                >
+                  Learn More About Us
+                </Link>
+              </div>
+            </div>
+            <div className="md:col-span-5">
+              <img
+                src={founderAsset.url}
+                alt="Diteboho Patrick Kotoane, Director and Founder of Ditebogo Kotoane Attorneys Inc."
+                loading="lazy"
+                width={1024}
+                height={1280}
+                className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -70,19 +101,29 @@ function HomePage() {
       {/* Practice Areas Preview */}
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <div>
+          <div className="grid items-end gap-12 md:grid-cols-12">
+            <div className="md:col-span-7">
               <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
                 Practice Areas
               </p>
               <h2 className="mt-5 text-balance font-display text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
                 Four disciplines. One standard.
               </h2>
+              <p className="mt-5 max-w-[44ch] text-balance font-sans text-base leading-relaxed text-muted-foreground">
+                From the first claim to final judgment, every matter is handled with
+                clarity and integrity.
+              </p>
             </div>
-            <p className="max-w-[34ch] text-balance font-sans text-sm text-muted-foreground">
-              From the first claim to final judgment, every matter is handled with
-              clarity and integrity.
-            </p>
+            <div className="md:col-span-5">
+              <img
+                src={attorneyAsset.url}
+                alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
+                loading="lazy"
+                width={1200}
+                height={800}
+                className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+              />
+            </div>
           </div>
           <div className="mt-12 grid gap-px border border-line bg-line md:grid-cols-2">
             <PracticeAreaCard
