@@ -125,7 +125,7 @@ function Header() {
           <img
             src={logoAsset.url}
             alt="Diteboho Kotoane Attorneys Inc."
-            className="h-12 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
         <nav className="flex min-w-0 flex-wrap items-center justify-end gap-x-4 gap-y-2 font-sans text-sm font-medium text-ink md:gap-8">
