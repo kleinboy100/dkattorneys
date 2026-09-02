@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import mapImage from "../assets/map-klerksdorp.jpg";
 import teamAsset from "../assets/team.jpg.asset.json";
+import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -82,7 +83,7 @@ function ContactPage() {
             </div>
             <div className="mt-10">
               <img
-                src={teamAsset.url}
+                src={assetUrl(teamAsset)}
                 alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
                 width={1200}
                 height={800}

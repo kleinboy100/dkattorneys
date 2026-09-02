@@ -12,6 +12,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import logoAsset from "../assets/logo.png.asset.json";
+import { assetUrl } from "../lib/asset-url";
 
 function NotFoundComponent() {
   return (
@@ -125,7 +126,7 @@ function Header() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-6">
         <Link to="/" className="flex shrink-0 items-center">
           <img
-            src={logoAsset.url}
+            src={assetUrl(logoAsset)}
             alt="Diteboho Kotoane Attorneys Inc."
             className="h-14 w-auto"
           />

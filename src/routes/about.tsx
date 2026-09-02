@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import founderAsset from "../assets/founder.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
 import attorneyAsset from "../assets/attorney.jpg.asset.json";
+import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -25,7 +26,7 @@ function AboutPage() {
         <div className="grid items-start gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <img
-              src={founderAsset.url}
+              src={assetUrl(founderAsset)}
               alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
               width={1024}
               height={1280}
@@ -99,13 +100,13 @@ function TeamSection() {
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-5">
           <img
-            src={teamAsset.url}
+            src={assetUrl(teamAsset)}
             alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
             loading="lazy"
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-3"
           />
           <img
-            src={attorneyAsset.url}
+            src={assetUrl(attorneyAsset)}
             alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
             loading="lazy"
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
