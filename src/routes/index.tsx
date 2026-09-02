@@ -6,9 +6,9 @@ import attorneyAsset from "../assets/attorney.jpg.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Serving You Legally — Ditebogo Kotoane Attorneys Inc." },
+      { title: "Serving You Legally — Diteboho Kotoane Attorneys Inc." },
       { name: "description", content: "Professional, reliable, and accessible legal solutions tailored for individuals and businesses in Klerksdorp and across South Africa." },
-      { property: "og:title", content: "Serving You Legally — Ditebogo Kotoane Attorneys Inc." },
+      { property: "og:title", content: "Serving You Legally — Diteboho Kotoane Attorneys Inc." },
       { property: "og:description", content: "Professional, reliable, and accessible legal solutions tailored for individuals and businesses in Klerksdorp and across South Africa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -71,7 +71,7 @@ function HomePage() {
                 Our Approach
               </p>
               <p className="mt-5 text-balance font-display text-2xl font-semibold italic leading-relaxed text-ink md:text-3xl">
-                At Ditebogo Kotoane Attorneys Inc., we believe that legal representation
+                At Diteboho Kotoane Attorneys Inc., we believe that legal representation
                 should be precise, empathetic, and relentlessly focused on protecting
                 your rights.
               </p>
@@ -87,7 +87,7 @@ function HomePage() {
             <div className="md:col-span-5">
               <img
                 src={founderAsset.url}
-                alt="Diteboho Patrick Kotoane, Director and Founder of Ditebogo Kotoane Attorneys Inc."
+                alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
                 loading="lazy"
                 width={1024}
                 height={1280}

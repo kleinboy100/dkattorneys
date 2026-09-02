@@ -5,10 +5,10 @@ import teamAsset from "../assets/team.jpg.asset.json";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Ditebogo Kotoane Attorneys Inc." },
-      { name: "description", content: "Contact Ditebogo Kotoane Attorneys Inc. at 36 Leask Street, Klerksdorp CBD, 2570. Schedule a consultation today." },
-      { property: "og:title", content: "Contact Us — Ditebogo Kotoane Attorneys Inc." },
-      { property: "og:description", content: "Contact Ditebogo Kotoane Attorneys Inc. at 36 Leask Street, Klerksdorp CBD, 2570. Schedule a consultation today." },
+      { title: "Contact Us — Diteboho Kotoane Attorneys Inc." },
+      { name: "description", content: "Contact Diteboho Kotoane Attorneys Inc. at 36 Leask Street, Klerksdorp CBD, 2570. Schedule a consultation today." },
+      { property: "og:title", content: "Contact Us — Diteboho Kotoane Attorneys Inc." },
+      { property: "og:description", content: "Contact Diteboho Kotoane Attorneys Inc. at 36 Leask Street, Klerksdorp CBD, 2570. Schedule a consultation today." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -83,14 +83,14 @@ function ContactPage() {
             <div className="mt-10">
               <img
                 src={teamAsset.url}
-                alt="The team of Ditebogo Kotoane Attorneys Inc. at their Klerksdorp offices"
+                alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
                 width={1200}
                 height={800}
                 loading="lazy"
                 className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
               />
               <p className="mt-3 font-sans text-xs text-paper/45">
-                The Ditebogo Kotoane Attorneys Inc. team in Klerksdorp.
+                The Diteboho Kotoane Attorneys Inc. team in Klerksdorp.
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ function ContactPage() {
             >
               <img
                 src={mapImage}
-                alt="Map showing the location of Ditebogo Kotoane Attorneys Inc. in Klerksdorp"
+                alt="Map showing the location of Diteboho Kotoane Attorneys Inc. in Klerksdorp"
                 width={1280}
                 height={896}
                 loading="lazy"

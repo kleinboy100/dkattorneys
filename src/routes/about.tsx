@@ -6,10 +6,10 @@ import attorneyAsset from "../assets/attorney.jpg.asset.json";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Ditebogo Kotoane Attorneys Inc." },
-      { name: "description", content: "Learn about Ditebogo Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
-      { property: "og:title", content: "About Us — Ditebogo Kotoane Attorneys Inc." },
-      { property: "og:description", content: "Learn about Ditebogo Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { title: "About Us — Diteboho Kotoane Attorneys Inc." },
+      { name: "description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { property: "og:title", content: "About Us — Diteboho Kotoane Attorneys Inc." },
+      { property: "og:description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -26,7 +26,7 @@ function AboutPage() {
           <div className="md:col-span-5">
             <img
               src={founderAsset.url}
-              alt="Diteboho Patrick Kotoane, Director and Founder of Ditebogo Kotoane Attorneys Inc."
+              alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
               width={1024}
               height={1280}
               className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
@@ -41,7 +41,7 @@ function AboutPage() {
             </h1>
             <div className="mt-6 space-y-5 text-balance font-sans text-base leading-relaxed text-muted-foreground">
               <p>
-                Founded on September 1, 2020, Ditebogo Kotoane Attorneys Inc. is a
+                Founded on September 1, 2020, Diteboho Kotoane Attorneys Inc. is a
                 dynamic law firm based in the heart of the Klerksdorp CBD. We have
                 built a robust reputation by guiding our clients through complex
                 legal landscapes with clarity and integrity.

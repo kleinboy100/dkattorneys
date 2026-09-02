@@ -7,7 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ditebogo Kotoane Attorneys Inc." },
+      { title: "Diteboho Kotoane Attorneys Inc." },
       { name: "description", content: "Professional legal services in Klerksdorp and across South Africa." },
-      { name: "author", content: "Ditebogo Kotoane Attorneys Inc." },
-      { property: "og:title", content: "Ditebogo Kotoane Attorneys Inc." },
+      { name: "author", content: "Diteboho Kotoane Attorneys Inc." },
+      { property: "og:title", content: "Diteboho Kotoane Attorneys Inc." },
       { property: "og:description", content: "Professional legal services in Klerksdorp and across South Africa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -118,6 +118,8 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
@@ -145,7 +147,49 @@ function Header() {
             Schedule a Consultation
           </Link>
         </nav>
+        <button
+          type="button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex h-10 w-10 items-center justify-center text-ink md:hidden"
+        >
+          {open ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 12h16" />
+              <path d="M4 18h16" />
+              <path d="M4 6h16" />
+            </svg>
+          )}
+        </button>
       </div>
+      {open && (
+        <nav className="border-t border-line bg-paper px-6 py-6 md:hidden">
+          <div className="flex flex-col gap-4 font-sans text-base font-medium text-ink">
+            <Link to="/about" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              About
+            </Link>
+            <Link to="/services" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              Practice Areas
+            </Link>
+            <Link to="/contact" onClick={() => setOpen(false)} className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+              Contact
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex items-center justify-center bg-ink px-4 py-3 text-sm text-paper transition-colors hover:bg-brand"
+            >
+              Schedule a Consultation
+            </Link>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
@@ -156,7 +200,7 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 md:flex-row md:items-center">
         <div className="flex items-baseline gap-3">
           <span className="font-display text-lg font-extrabold tracking-tight">
-            Ditebogo Kotoane
+            Diteboho Kotoane
           </span>
           <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
             Attorneys Inc.
@@ -170,7 +214,7 @@ function Footer() {
             info@dkattorney.co.za
           </a>
           <p>
-            © {new Date().getFullYear()} Ditebogo Kotoane Attorneys Inc. · Klerksdorp, South Africa
+            © {new Date().getFullYear()} Diteboho Kotoane Attorneys Inc. · Klerksdorp, South Africa
           </p>
         </div>
       </div>
