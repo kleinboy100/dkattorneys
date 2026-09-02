@@ -74,11 +74,24 @@ function ContactPage() {
             </div>
             <div className="mt-10">
               <a
-                href="mailto:info@dkattorneys.co.za?subject=Consultation%20Request"
+                href="mailto:info@dkattorney.co.za?subject=Consultation%20Request"
                 className="inline-block bg-brand px-7 py-3.5 font-sans text-sm font-semibold tracking-wide text-white transition-colors hover:bg-paper hover:text-ink"
               >
                 Schedule a Consultation
               </a>
+            </div>
+            <div className="mt-10">
+              <img
+                src={teamAsset.url}
+                alt="The team of Ditebogo Kotoane Attorneys Inc. at their Klerksdorp offices"
+                width={1200}
+                height={800}
+                loading="lazy"
+                className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
+              />
+              <p className="mt-3 font-sans text-xs text-paper/45">
+                The Ditebogo Kotoane Attorneys Inc. team in Klerksdorp.
+              </p>
             </div>
           </div>
           <div className="md:col-span-7">
