@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { Smartphone, Phone } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
@@ -219,11 +220,13 @@ function Footer() {
             info@dkattorney.co.za
           </a>
           <div className="flex flex-col gap-1 text-paper/70 md:items-end">
-            <a href="tel:+27615182258" className="transition-colors hover:text-paper">
-              Cell: 061 518 2258
+            <a href="tel:+27615182258" className="inline-flex items-center gap-1.5 transition-colors hover:text-paper">
+              <Smartphone size={12} className="text-brand" />
+              061 518 2258
             </a>
-            <a href="tel:+27864781283" className="transition-colors hover:text-paper">
-              Tel: 086 478 1283
+            <a href="tel:+27864781283" className="inline-flex items-center gap-1.5 transition-colors hover:text-paper">
+              <Phone size={12} className="text-brand" />
+              086 478 1283
             </a>
           </div>
           <p>
