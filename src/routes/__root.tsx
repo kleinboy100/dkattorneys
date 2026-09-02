@@ -118,31 +118,46 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link to="/" className="flex items-baseline gap-3">
-          <span className="font-display text-xl font-extrabold tracking-tight text-ink">
-            Ditebogo Kotoane
+    <header className="sticky top-0 z-50 border-b-4 border-ink bg-paper">
+      <div className="flex items-stretch justify-between">
+        <Link to="/" className="flex items-center gap-3 px-6 py-4">
+          <span className="flex h-9 w-9 items-center justify-center bg-brand font-display text-sm text-paper">
+            DK
           </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
-            Attorneys Inc.
+          <span className="font-display text-sm uppercase leading-none tracking-tight text-ink">
+            Ditebogo Kotoane
+            <span className="mt-1 block font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-brand">
+              Attorneys Inc.
+            </span>
           </span>
         </Link>
-        <nav className="hidden items-center gap-8 font-sans text-sm font-medium text-ink md:flex">
-          <Link to="/about" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+        <nav className="hidden items-stretch font-sans text-xs font-bold uppercase tracking-[0.14em] text-ink md:flex">
+          <Link
+            to="/about"
+            className="flex items-center border-l-2 border-ink px-6 transition-colors hover:bg-ink hover:text-paper"
+            activeProps={{ className: "bg-ink text-paper" }}
+          >
             About
           </Link>
-          <Link to="/services" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+          <Link
+            to="/services"
+            className="flex items-center border-l-2 border-ink px-6 transition-colors hover:bg-ink hover:text-paper"
+            activeProps={{ className: "bg-ink text-paper" }}
+          >
             Practice Areas
           </Link>
-          <Link to="/contact" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
+          <Link
+            to="/contact"
+            className="flex items-center border-l-2 border-ink px-6 transition-colors hover:bg-ink hover:text-paper"
+            activeProps={{ className: "bg-ink text-paper" }}
+          >
             Contact
           </Link>
           <Link
             to="/contact"
-            className="bg-ink px-4 py-2 text-sm text-paper transition-colors hover:bg-brand"
+            className="flex items-center border-l-2 border-ink bg-brand px-6 text-paper transition-colors hover:bg-ink"
           >
-            Schedule a Consultation
+            Consultation
           </Link>
         </nav>
       </div>
@@ -152,17 +167,17 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-ink text-paper">
-      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 md:flex-row md:items-center">
-        <div className="flex items-baseline gap-3">
-          <span className="font-display text-lg font-extrabold tracking-tight">
+    <footer className="border-t-4 border-brand bg-ink text-paper">
+      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-12 md:flex-row md:items-end">
+        <div>
+          <p className="font-display text-2xl uppercase leading-none tracking-tight">
             Ditebogo Kotoane
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
-            Attorneys Inc.
-          </span>
+          </p>
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.22em] text-brand">
+            Attorneys Inc. · Est. 2020
+          </p>
         </div>
-        <p className="font-sans text-xs text-paper/50">
+        <p className="font-sans text-xs uppercase tracking-wide text-paper/50">
           © {new Date().getFullYear()} Ditebogo Kotoane Attorneys Inc. · Klerksdorp, South Africa
         </p>
       </div>
