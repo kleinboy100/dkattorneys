@@ -61,12 +61,12 @@ function ContactPage() {
               </div>
             </div>
             <div className="mt-10">
-              <Link
-                to="/contact"
+              <a
+                href="mailto:info@dkattorneys.co.za?subject=Consultation%20Request"
                 className="inline-block bg-brand px-7 py-3.5 font-sans text-sm font-semibold tracking-wide text-white transition-colors hover:bg-paper hover:text-ink"
               >
                 Schedule a Consultation
-              </Link>
+              </a>
             </div>
           </div>
           <div className="md:col-span-7">
