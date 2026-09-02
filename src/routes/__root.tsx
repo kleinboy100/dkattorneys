@@ -120,7 +120,7 @@ function RootShell({ children }: { children: ReactNode }) {
 function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between gap-4 px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-6">
         <Link to="/" className="flex shrink-0 items-center">
           <img
             src={logoAsset.url}
