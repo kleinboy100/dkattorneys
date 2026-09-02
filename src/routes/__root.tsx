@@ -120,27 +120,24 @@ function RootShell({ children }: { children: ReactNode }) {
 function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
-      <div className="mx-auto grid h-16 max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 sm:flex sm:flex-wrap sm:justify-between">
-        <Link to="/" className="flex min-w-0 items-center">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-6">
+        <Link to="/" className="flex shrink-0 items-center">
           <img
             src={logoAsset.url}
             alt="Diteboho Kotoane Attorneys Inc."
-            className="h-10 w-auto shrink-0"
+            className="h-14 w-auto"
           />
         </Link>
-        <nav className="flex min-w-0 flex-wrap items-center justify-end gap-x-3 gap-y-2 font-sans text-xs font-medium text-ink sm:gap-x-6 sm:text-sm md:gap-8">
+        <nav className="flex min-w-0 flex-wrap items-center justify-end gap-x-4 gap-y-2 font-sans text-sm font-medium text-ink md:gap-8">
           <Link to="/about" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
             About
-          </Link>
-          <Link to="/services" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
-            Practice Areas
           </Link>
           <Link to="/contact" className="transition-colors hover:text-brand" activeProps={{ className: "text-brand" }}>
             Contact
           </Link>
           <Link
             to="/contact"
-            className="shrink-0 bg-ink px-3 py-2 text-paper transition-colors hover:bg-brand sm:px-4"
+            className="shrink-0 bg-ink px-4 py-2 text-sm text-paper transition-colors hover:bg-brand"
           >
             <span className="sm:hidden">Schedule</span>
             <span className="hidden sm:inline">Schedule a Consultation</span>
