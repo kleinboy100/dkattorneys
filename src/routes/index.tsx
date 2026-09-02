@@ -54,9 +54,9 @@ function HomePage() {
             src={teamAsset.url}
             alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
             loading="eager"
-            width={1920}
-            height={1080}
-            className="animate-rise-late aspect-[21/9] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            width={1200}
+            height={800}
+            className="animate-rise-late aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
             style={{ animationDelay: "360ms" }}
           />
         </div>
