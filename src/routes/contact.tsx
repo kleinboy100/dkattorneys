@@ -55,16 +55,18 @@ function ContactPage() {
                 </p>
                 <a
                   href="tel:+27615182258"
-                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                  className="mt-1 inline-flex items-center gap-2 text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
                 >
-                  Cell: 061 518 2258
+                  <Smartphone size={14} className="text-brand" />
+                  061 518 2258
                 </a>
                 <br />
                 <a
                   href="tel:+27864781283"
-                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                  className="mt-1 inline-flex items-center gap-2 text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
                 >
-                  Tel: 086 478 1283
+                  <Phone size={14} className="text-brand" />
+                  086 478 1283
                 </a>
               </div>
               <div>
