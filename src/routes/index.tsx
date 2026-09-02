@@ -28,7 +28,7 @@ function HomePage() {
             DK
           </div>
           <div className="relative">
-            <p className="animate-rise font-display text-[4.5rem] font-bold leading-none tracking-tight text-ink md:text-[5.625rem]">
+            <p className="animate-rise font-display text-[2.25rem] font-bold leading-none tracking-tight text-ink md:text-[2.8125rem]">
               Diteboho Kotoane Attorneys Inc.
             </p>
             <p className="animate-rise mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
