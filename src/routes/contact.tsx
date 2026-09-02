@@ -49,6 +49,17 @@ function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+                  Email
+                </p>
+                <a
+                  href="mailto:info@dkattorney.co.za?subject=Consultation%20Request"
+                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  info@dkattorney.co.za
+                </a>
+              </div>
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
                   Connect
                 </p>
                 <a
