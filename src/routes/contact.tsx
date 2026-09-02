@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Smartphone, Phone } from "lucide-react";
 import mapImage from "../assets/map-klerksdorp.jpg";
 import teamAsset from "../assets/team.jpg.asset.json";
 import { assetUrl } from "../lib/asset-url";
