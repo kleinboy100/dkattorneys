@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import mapImage from "../assets/map-klerksdorp.jpg";
+import teamAsset from "../assets/team.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -48,6 +49,17 @@ function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+                  Email
+                </p>
+                <a
+                  href="mailto:info@dkattorney.co.za?subject=Consultation%20Request"
+                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  info@dkattorney.co.za
+                </a>
+              </div>
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
                   Connect
                 </p>
                 <a
@@ -62,11 +74,24 @@ function ContactPage() {
             </div>
             <div className="mt-10">
               <a
-                href="mailto:info@dkattorneys.co.za?subject=Consultation%20Request"
+                href="mailto:info@dkattorney.co.za?subject=Consultation%20Request"
                 className="inline-block bg-brand px-7 py-3.5 font-sans text-sm font-semibold tracking-wide text-white transition-colors hover:bg-paper hover:text-ink"
               >
                 Schedule a Consultation
               </a>
+            </div>
+            <div className="mt-10">
+              <img
+                src={teamAsset.url}
+                alt="The team of Ditebogo Kotoane Attorneys Inc. at their Klerksdorp offices"
+                width={1200}
+                height={800}
+                loading="lazy"
+                className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
+              />
+              <p className="mt-3 font-sans text-xs text-paper/45">
+                The Ditebogo Kotoane Attorneys Inc. team in Klerksdorp.
+              </p>
             </div>
           </div>
           <div className="md:col-span-7">

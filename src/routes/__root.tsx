@@ -162,9 +162,17 @@ function Footer() {
             Attorneys Inc.
           </span>
         </div>
-        <p className="font-sans text-xs text-paper/50">
-          © {new Date().getFullYear()} Ditebogo Kotoane Attorneys Inc. · Klerksdorp, South Africa
-        </p>
+        <div className="flex flex-col gap-2 font-sans text-xs text-paper/50 md:items-end">
+          <a
+            href="mailto:info@dkattorney.co.za"
+            className="text-paper/70 transition-colors hover:text-paper"
+          >
+            info@dkattorney.co.za
+          </a>
+          <p>
+            © {new Date().getFullYear()} Ditebogo Kotoane Attorneys Inc. · Klerksdorp, South Africa
+          </p>
+        </div>
       </div>
     </footer>
   );
