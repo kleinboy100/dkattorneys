@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import mapImage from "../assets/map-klerksdorp.jpg";
+import teamAsset from "../assets/team.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
