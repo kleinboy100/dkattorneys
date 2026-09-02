@@ -50,6 +50,24 @@ function ContactPage() {
               </div>
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
+                  Phone
+                </p>
+                <a
+                  href="tel:+27615182258"
+                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  Cell: 061 518 2258
+                </a>
+                <br />
+                <a
+                  href="tel:+27864781283"
+                  className="mt-1 inline-block text-paper/90 underline decoration-brand/40 underline-offset-4 transition-colors hover:text-paper"
+                >
+                  Tel: 086 478 1283
+                </a>
+              </div>
+              <div>
+                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/50">
                   Email
                 </p>
                 <a
