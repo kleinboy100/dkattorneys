@@ -19,6 +19,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
+    <>
     <section className="border-b border-line bg-paper">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid items-start gap-12 md:grid-cols-12">
