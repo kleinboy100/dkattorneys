@@ -78,7 +78,7 @@
   --radius: 0.625rem;
 
   /* Red, white, black palette */
-  --brand: oklch(0.55 0.18 25);
+  --brand: oklch(0.577 0.227 27.5);
   --ink: oklch(0.18 0.02 240);
   --paper: oklch(1 0 0);
   --line: oklch(0.18 0.02 240 / 0.12);
