@@ -24,7 +24,7 @@ function AboutPage() {
         <div className="grid items-start gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <img
-              src={founderPortrait}
+              src={founderAsset.url}
               alt="Diteboho Patrick Kotoane, Director and Founder of Ditebogo Kotoane Attorneys Inc."
               width={1024}
               height={1280}
@@ -79,6 +79,40 @@ function AboutPage() {
             </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function TeamSection() {
+  return (
+    <section className="border-b border-line bg-secondary">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
+          (b) Our Team
+        </p>
+        <h2 className="mt-5 max-w-2xl text-balance font-display text-3xl font-bold italic tracking-tight text-ink md:text-4xl">
+          The people behind the practice.
+        </h2>
+        <div className="mt-10 grid gap-6 md:grid-cols-5">
+          <img
+            src={teamAsset.url}
+            alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
+            loading="lazy"
+            className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-3"
+          />
+          <img
+            src={attorneyAsset.url}
+            alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
+            loading="lazy"
+            className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
+          />
+        </div>
+        <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-muted-foreground">
+          Our Klerksdorp team works side by side on every matter — from first
+          consultation to final resolution — so clients always know who is
+          standing behind their case.
+        </p>
       </div>
     </section>
   );
