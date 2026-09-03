@@ -26,13 +26,13 @@ function HomePage() {
       <section className="relative overflow-hidden bg-paper">
         <div className="relative mx-auto max-w-6xl px-6 pb-12 pt-20 text-center">
           <div
-            className="pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none opacity-[0.04]"
+            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none opacity-[0.12]"
             style={{
-              width: "30vw",
-              height: "30vw",
+              width: "min(80vw, 42rem)",
+              height: "min(80vw, 42rem)",
               backgroundImage: `url(${assetUrl(logoAsset)})`,
               backgroundSize: "contain",
-              backgroundPosition: "center top",
+              backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
             aria-hidden="true"
