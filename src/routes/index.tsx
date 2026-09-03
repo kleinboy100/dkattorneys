@@ -25,9 +25,18 @@ function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-paper">
         <div className="relative mx-auto max-w-6xl px-6 pb-12 pt-20 text-center">
-          <div className="pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none whitespace-nowrap font-display text-[24vw] font-extrabold leading-none text-ink/[0.04]">
-            DK
-          </div>
+          <div
+            className="pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none opacity-[0.04]"
+            style={{
+              width: "30vw",
+              height: "30vw",
+              backgroundImage: `url(${assetUrl(logoAsset)})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center top",
+              backgroundRepeat: "no-repeat",
+            }}
+            aria-hidden="true"
+          />
           <div className="relative">
             <p className="animate-rise font-display text-[2.25rem] font-bold leading-none tracking-tight text-ink md:text-[2.8125rem]">
               Diteboho Kotoane Attorneys Inc.
