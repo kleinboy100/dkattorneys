@@ -49,7 +49,10 @@ function HomePage() {
               <br className="hidden md:block" /> Legally
             </h1>
             <div className="animate-rule-in mx-auto mt-8 h-px w-24 bg-brand" />
-            <p className="animate-rise-late mx-auto mt-8 max-w-[46ch] text-balance font-sans text-lg text-muted-foreground">
+            <p
+              className="animate-rise-late mx-auto mt-8 max-w-[46ch] text-balance font-sans text-lg font-medium text-ink"
+              style={{ textShadow: "0 1px 16px rgba(255,255,255,0.9)" }}
+            >
               Professional, reliable, and accessible legal solutions tailored for
               individuals and businesses in Klerksdorp and across South Africa.
             </p>
