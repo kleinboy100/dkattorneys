@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import founderAsset from "../assets/founder.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
-import attorneyAsset from "../assets/attorney.jpg.asset.json";
+import attorneyDeskAsset from "../assets/attorney-desk.jpg.asset.json";
 import logoAsset from "../assets/logo.png.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
@@ -133,12 +133,12 @@ function HomePage() {
             </div>
             <div className="md:col-span-5">
               <img
-                src={assetUrl(attorneyAsset)}
-                alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
+                src={assetUrl(attorneyDeskAsset)}
+                alt="A legal professional of Diteboho Kotoane Attorneys Inc. seated at his desk in the firm's office"
                 loading="lazy"
-                width={1200}
-                height={800}
-                className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+                width={1024}
+                height={1280}
+                className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
               />
             </div>
           </div>
