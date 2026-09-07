@@ -121,8 +121,8 @@ function HomePage() {
             </div>
             <div className="md:col-span-5">
               <img
-                src={assetUrl(attorneyAsset)}
-                alt="An attorney of Diteboho Kotoane Attorneys Inc. seated at her desk in the firm's office"
+                src={assetUrl(founderAsset)}
+                alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
                 loading="lazy"
                 width={1024}
                 height={1280}
