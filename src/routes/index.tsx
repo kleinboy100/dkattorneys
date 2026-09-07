@@ -82,34 +82,22 @@ function HomePage() {
       {/* Core Value Statement */}
       <section className="border-y border-line bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid items-center gap-12 md:grid-cols-12">
-            <div className="md:col-span-7">
-              <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-                Our Approach
-              </p>
-              <p className="mt-5 text-balance font-display text-2xl font-semibold italic leading-relaxed text-ink md:text-3xl">
-                At Diteboho Kotoane Attorneys Inc., we believe that legal representation
-                should be precise, empathetic, and relentlessly focused on protecting
-                your rights.
-              </p>
-              <div className="mt-10">
-                <Link
-                  to="/about"
-                  className="inline-block border border-line bg-paper px-6 py-3 font-sans text-sm font-semibold text-ink transition-colors hover:bg-secondary"
-                >
-                  Learn More About Us
-                </Link>
-              </div>
-            </div>
-            <div className="md:col-span-5">
-              <img
-                src={assetUrl(founderAsset)}
-                alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
-                loading="lazy"
-                width={1024}
-                height={1280}
-                className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
-              />
+          <div className="mx-auto max-w-3xl">
+            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
+              Our Approach
+            </p>
+            <p className="mt-5 text-balance font-display text-2xl font-semibold italic leading-relaxed text-ink md:text-3xl">
+              At Diteboho Kotoane Attorneys Inc., we believe that legal representation
+              should be precise, empathetic, and relentlessly focused on protecting
+              your rights.
+            </p>
+            <div className="mt-10">
+              <Link
+                to="/about"
+                className="inline-block border border-line bg-paper px-6 py-3 font-sans text-sm font-semibold text-ink transition-colors hover:bg-secondary"
+              >
+                Learn More About Us
+              </Link>
             </div>
           </div>
         </div>
