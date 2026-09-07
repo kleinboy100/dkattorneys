@@ -5,6 +5,7 @@ import attorneyAsset from "../assets/attorney.jpg.asset.json";
 import teamMember1 from "../assets/team-member-1.jpg.asset.json";
 import teamMember2 from "../assets/team-member-2.jpg.asset.json";
 import teamMember3 from "../assets/team-member-3.jpg.asset.json";
+import attorneyPortrait from "../assets/attorney-portrait.jpg.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/about")({
@@ -35,6 +36,12 @@ function AboutPage() {
               height={1280}
               className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
             />
+            <p className="mt-3 font-sans font-semibold text-ink">
+              Diteboho Patrick Kotoane
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Director &amp; Founder
+            </p>
           </div>
           <div className="md:col-span-7">
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
@@ -108,26 +115,28 @@ function TeamSection() {
             loading="lazy"
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-3"
           />
-          <img
-            src={assetUrl(attorneyAsset)}
-            alt="An attorney of Diteboho Kotoane Attorneys Inc. seated at her desk in the firm's office"
-            loading="lazy"
-            className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
-          />
+          <div className="md:col-span-2">
+            <img
+              src={assetUrl(attorneyAsset)}
+              alt="An attorney of Diteboho Kotoane Attorneys Inc. seated at her desk in the firm's office"
+              loading="lazy"
+              className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:aspect-auto"
+            />
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Attorney
+            </p>
+          </div>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <img
               src={assetUrl(teamMember1)}
-              alt="Diteboho Patrick Kotoane, Director and Founder, seated at his desk in the firm's Klerksdorp office"
+              alt="An attorney of Diteboho Kotoane Attorneys Inc. wearing glasses and seated at his desk"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
             />
-            <p className="mt-3 font-sans font-semibold text-ink">
-              Diteboho Patrick Kotoane
-            </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
-              Director &amp; Founder
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Attorney
             </p>
           </div>
           <div>
@@ -145,6 +154,17 @@ function TeamSection() {
             <img
               src={assetUrl(teamMember3)}
               alt="A member of the Diteboho Kotoane Attorneys Inc. team seated at his desk in the firm's Klerksdorp office"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            />
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Attorney
+            </p>
+          </div>
+          <div>
+            <img
+              src={assetUrl(attorneyPortrait)}
+              alt="An attorney of Diteboho Kotoane Attorneys Inc. seated at her desk"
               loading="lazy"
               className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
             />
