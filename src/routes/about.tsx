@@ -115,7 +115,45 @@ function TeamSection() {
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
           />
         </div>
-        <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-muted-foreground">
+        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          <div>
+            <img
+              src={assetUrl(teamMember1)}
+              alt="Diteboho Patrick Kotoane, Director and Founder, seated at his desk in the firm's Klerksdorp office"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            />
+            <p className="mt-3 font-sans font-semibold text-ink">
+              Diteboho Patrick Kotoane
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Director &amp; Founder
+            </p>
+          </div>
+          <div>
+            <img
+              src={assetUrl(teamMember2)}
+              alt="A member of the Diteboho Kotoane Attorneys Inc. team seated at her desk in the firm's Klerksdorp office"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            />
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Attorney
+            </p>
+          </div>
+          <div>
+            <img
+              src={assetUrl(teamMember3)}
+              alt="A member of the Diteboho Kotoane Attorneys Inc. team seated at his desk in the firm's Klerksdorp office"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
+            />
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              Attorney
+            </p>
+          </div>
+        </div>
+        <p className="mt-8 max-w-2xl font-sans text-base leading-relaxed text-muted-foreground">
           Our Klerksdorp team works side by side on every matter — from first
           consultation to final resolution — so clients always know who is
           standing behind their case.
