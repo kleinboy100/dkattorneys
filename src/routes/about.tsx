@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import founderAsset from "../assets/founder.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
-import attorneyDeskAsset from "../assets/attorney-desk.jpg.asset.json";
+import attorneyAsset from "../assets/attorney.jpg.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/about")({
@@ -106,8 +106,8 @@ function TeamSection() {
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-3"
           />
           <img
-            src={assetUrl(attorneyDeskAsset)}
-            alt="A legal professional of Diteboho Kotoane Attorneys Inc. seated at his desk in the firm's office"
+            src={assetUrl(attorneyAsset)}
+            alt="An attorney of Diteboho Kotoane Attorneys Inc. seated at her desk in the firm's office"
             loading="lazy"
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
           />
