@@ -106,8 +106,8 @@ function TeamSection() {
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-3"
           />
           <img
-            src={assetUrl(attorneyAsset)}
-            alt="A legal professional of Diteboho Kotoane Attorneys Inc. in the firm's office"
+            src={assetUrl(attorneyDeskAsset)}
+            alt="A legal professional of Diteboho Kotoane Attorneys Inc. seated at his desk in the firm's office"
             loading="lazy"
             className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5 md:col-span-2 md:aspect-auto"
           />
