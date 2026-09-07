@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import founderAsset from "../assets/founder.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
 import attorneyAsset from "../assets/attorney.jpg.asset.json";
+import teamMember1 from "../assets/team-member-1.jpg.asset.json";
+import teamMember2 from "../assets/team-member-2.jpg.asset.json";
+import teamMember3 from "../assets/team-member-3.jpg.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/about")({
