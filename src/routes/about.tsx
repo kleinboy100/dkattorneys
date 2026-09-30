@@ -168,7 +168,7 @@ function TeamSection() {
     <section className="border-b border-line bg-secondary">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-          (b) Our Team
+          (c) Our Team
         </p>
         <h2 className="mt-5 max-w-2xl text-balance font-display text-3xl font-bold italic tracking-tight text-ink md:text-4xl">
           The people behind the practice.

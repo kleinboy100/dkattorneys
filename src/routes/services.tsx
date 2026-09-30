@@ -23,15 +23,20 @@ const practiceAreas = [
   {
     number: "02",
     title: "Litigation & Dispute Resolution",
-    services: ["Criminal Litigation", "Civil Litigation"],
+    services: ["Civil Litigation", "Criminal Matters"],
   },
   {
     number: "03",
     title: "Family & Personal Law",
-    services: ["Divorce & Maintenance", "Administration of Deceased Estates"],
+    services: ["Divorce Matters", "Maintenance Matters", "Domestic Violence Matters", "Administration of Deceased Estates"],
   },
   {
     number: "04",
+    title: "Labour & Employment",
+    services: ["Labour Disputes"],
+  },
+  {
+    number: "05",
     title: "Commercial & Financial",
     services: ["Commercial Law", "Drafting Contracts", "Credit Matters"],
   },
