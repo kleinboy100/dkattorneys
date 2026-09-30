@@ -66,17 +66,6 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl px-6 pb-20">
-          <img
-            src={assetUrl(teamAsset)}
-            alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
-            loading="eager"
-            width={1200}
-            height={800}
-            className="animate-rise-late aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
-            style={{ animationDelay: "360ms" }}
-          />
-        </div>
       </section>
 
       {/* Core Value Statement */}
