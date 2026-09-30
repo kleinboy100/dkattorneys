@@ -85,6 +85,9 @@ function ServicesPage() {
             </article>
           ))}
         </div>
+        <p className="mt-8 font-sans text-sm text-muted-foreground">
+          And other law-related matters — contact us to discuss how we can assist.
+        </p>
       </div>
     </section>
   );

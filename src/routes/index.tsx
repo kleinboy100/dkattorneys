@@ -133,7 +133,7 @@ function HomePage() {
             <PracticeAreaCard
               number="03"
               title="Family & Personal Law"
-              description="Divorce and maintenance, plus administration of deceased estates."
+              description="Divorce, maintenance, domestic violence matters, and administration of deceased estates."
             />
             <PracticeAreaCard
               number="04"
