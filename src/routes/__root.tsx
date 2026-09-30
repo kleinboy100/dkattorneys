@@ -8,7 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { Smartphone, Phone } from "lucide-react";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, lazy, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -37,7 +37,9 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+const ErrorComponent = lazy(() => Promise.resolve({ default: ErrorComponentInner }));
+
+function ErrorComponentInner({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
