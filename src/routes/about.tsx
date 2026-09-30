@@ -7,9 +7,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Us — Diteboho Kotoane Attorneys Inc." },
-      { name: "description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { name: "description", content: "Learn about Diteboho Kotoane Attorneys Inc., a 100% Black-owned law firm established in 2021 in Klerksdorp, its vision, mission, and founder Diteboho Patrick Kotoane." },
       { property: "og:title", content: "About Us — Diteboho Kotoane Attorneys Inc." },
-      { property: "og:description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { property: "og:description", content: "Learn about Diteboho Kotoane Attorneys Inc., a 100% Black-owned law firm established in 2021 in Klerksdorp, its vision, mission, and founder Diteboho Patrick Kotoane." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

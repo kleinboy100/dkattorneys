@@ -42,7 +42,7 @@ function HomePage() {
               Diteboho Kotoane Attorneys Inc.
             </p>
             <p className="animate-rise mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-              Klerksdorp · Established 2020
+              Klerksdorp · Established 2021 · 100% Black-Owned
             </p>
             <h1 className="animate-rise mt-6 text-balance font-display text-6xl font-extrabold tracking-tight text-ink md:text-7xl lg:text-8xl" style={{ animationDelay: "80ms" }}>
               Serving You
