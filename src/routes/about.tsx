@@ -7,9 +7,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Us — Diteboho Kotoane Attorneys Inc." },
-      { name: "description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { name: "description", content: "Learn about Diteboho Kotoane Attorneys Inc., a 100% Black-owned law firm established in 2021 in Klerksdorp, its vision, mission, and founder Diteboho Patrick Kotoane." },
       { property: "og:title", content: "About Us — Diteboho Kotoane Attorneys Inc." },
-      { property: "og:description", content: "Learn about Diteboho Kotoane Attorneys Inc., founded in 2020 in Klerksdorp, and our founder Diteboho Patrick Kotoane." },
+      { property: "og:description", content: "Learn about Diteboho Kotoane Attorneys Inc., a 100% Black-owned law firm established in 2021 in Klerksdorp, its vision, mission, and founder Diteboho Patrick Kotoane." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -47,15 +47,16 @@ function AboutPage() {
             </h1>
             <div className="mt-6 space-y-5 text-balance font-sans text-base leading-relaxed text-muted-foreground">
               <p>
-                Founded on September 1, 2020, Diteboho Kotoane Attorneys Inc. is a
-                dynamic law firm based in the heart of the Klerksdorp CBD. We have
-                built a robust reputation by guiding our clients through complex
-                legal landscapes with clarity and integrity.
+                Established in 2021 by Mr Diteboho Kotoane, Diteboho Kotoane
+                Attorneys Inc. is a 100% Black-owned law firm based in the heart of
+                the Klerksdorp CBD, committed to providing professional, ethical,
+                and effective legal services tailored to the needs of our clients.
               </p>
               <p>
-                Our firm is committed to providing professional, reliable, and
-                accessible legal solutions tailored for individuals and businesses
-                in Klerksdorp and across South Africa.
+                Our mission is to protect our clients' rights, pursue justice, and
+                provide dedicated legal representation across a wide range of legal
+                matters — from litigation and family matters to deceased estates,
+                domestic violence, and labour disputes.
               </p>
             </div>
 
@@ -88,8 +89,77 @@ function AboutPage() {
         </div>
       </div>
     </section>
+    <VisionMissionSection />
     <TeamSection />
     </>
+  );
+}
+
+function VisionMissionSection() {
+  return (
+    <section className="border-b border-line bg-paper">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
+          (b) Vision &amp; Mission
+        </p>
+        <div className="mt-10 grid gap-px border border-line bg-line md:grid-cols-2">
+          <div className="bg-paper p-8 md:p-10">
+            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
+              ⚖ Vision
+            </p>
+            <p className="mt-5 text-balance font-display text-xl font-semibold italic leading-relaxed text-ink md:text-2xl">
+              To be a trusted and respected law firm that delivers accessible,
+              professional, and client-focused legal services, while upholding
+              justice, integrity, and excellence.
+            </p>
+            <p className="mt-6 text-balance font-sans text-base leading-relaxed text-muted-foreground">
+              Diteboho Kotoane Attorneys strives to empower individuals, families,
+              and businesses through reliable legal representation and to make a
+              meaningful contribution to the communities we serve.
+            </p>
+          </div>
+          <div className="bg-paper p-8 md:p-10">
+            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
+              ⚖ Mission
+            </p>
+            <p className="mt-5 text-balance font-sans text-base leading-relaxed text-muted-foreground">
+              We protect our clients' rights, pursue justice, and provide dedicated
+              legal representation across a wide range of legal matters,
+              including:
+            </p>
+            <ul className="mt-5 grid gap-2 sm:grid-cols-2">
+              {[
+                "Civil Litigation",
+                "Criminal Matters",
+                "Family Matters",
+                "Maintenance Matters",
+                "Deceased Estates",
+                "Domestic Violence Matters",
+                "Labour Disputes",
+                "Divorce Matters",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-3 font-sans text-sm text-muted-foreground"
+                >
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 font-sans text-sm text-muted-foreground">
+              And other law-related matters.
+            </p>
+            <p className="mt-6 text-balance font-sans text-base leading-relaxed text-muted-foreground">
+              We are committed to delivering legal solutions with integrity,
+              confidentiality, accountability, and professionalism, ensuring that
+              every client receives the attention, guidance, and representation
+              they deserve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -98,7 +168,7 @@ function TeamSection() {
     <section className="border-b border-line bg-secondary">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-          (b) Our Team
+          (c) Our Team
         </p>
         <h2 className="mt-5 max-w-2xl text-balance font-display text-3xl font-bold italic tracking-tight text-ink md:text-4xl">
           The people behind the practice.

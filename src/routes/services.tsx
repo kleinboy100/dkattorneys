@@ -23,15 +23,20 @@ const practiceAreas = [
   {
     number: "02",
     title: "Litigation & Dispute Resolution",
-    services: ["Criminal Litigation", "Civil Litigation"],
+    services: ["Civil Litigation", "Criminal Matters"],
   },
   {
     number: "03",
     title: "Family & Personal Law",
-    services: ["Divorce & Maintenance", "Administration of Deceased Estates"],
+    services: ["Divorce Matters", "Maintenance Matters", "Domestic Violence Matters", "Administration of Deceased Estates"],
   },
   {
     number: "04",
+    title: "Labour & Employment",
+    services: ["Labour Disputes"],
+  },
+  {
+    number: "05",
     title: "Commercial & Financial",
     services: ["Commercial Law", "Drafting Contracts", "Credit Matters"],
   },
@@ -47,12 +52,12 @@ function ServicesPage() {
               (b) Practice Areas
             </p>
             <h1 className="mt-5 text-balance font-display text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
-              Four disciplines. One standard.
+              Every matter. One standard.
             </h1>
           </div>
           <p className="max-w-[34ch] text-balance font-sans text-sm text-muted-foreground">
-            From the first claim to final judgment, every matter is handled end to
-            end by a senior attorney.
+            Established in 2021, we are a 100% Black-owned firm handling every
+            matter end to end with integrity and professionalism.
           </p>
         </div>
 
@@ -80,6 +85,9 @@ function ServicesPage() {
             </article>
           ))}
         </div>
+        <p className="mt-8 font-sans text-sm text-muted-foreground">
+          And other law-related matters — contact us to discuss how we can assist.
+        </p>
       </div>
     </section>
   );
