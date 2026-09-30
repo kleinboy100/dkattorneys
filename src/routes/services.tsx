@@ -52,12 +52,12 @@ function ServicesPage() {
               (b) Practice Areas
             </p>
             <h1 className="mt-5 text-balance font-display text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
-              Four disciplines. One standard.
+              Every matter. One standard.
             </h1>
           </div>
           <p className="max-w-[34ch] text-balance font-sans text-sm text-muted-foreground">
-            From the first claim to final judgment, every matter is handled end to
-            end by a senior attorney.
+            Established in 2021, we are a 100% Black-owned firm handling every
+            matter end to end with integrity and professionalism.
           </p>
         </div>
 
