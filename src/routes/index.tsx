@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import teamAsset from "../assets/team.jpg.asset.json";
-import founderAsset from "../assets/founder.jpg.asset.json";
+import founderBrandAsset from "../assets/founder-brand.jpg.asset.json";
 import logoAsset from "../assets/logo.png.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
