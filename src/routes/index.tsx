@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import teamAsset from "../assets/team.jpg.asset.json";
 import founderBrandAsset from "../assets/founder-brand.jpg.asset.json";
-import logoAsset from "../assets/logo.png.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
 export const Route = createFileRoute("/")({
@@ -25,18 +23,6 @@ function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-paper">
         <div className="relative mx-auto max-w-6xl px-6 pb-12 pt-20 text-center">
-          <div
-            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none opacity-[0.12]"
-            style={{
-              width: "min(80vw, 42rem)",
-              height: "min(80vw, 42rem)",
-              backgroundImage: `url(${assetUrl(logoAsset)})`,
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-            aria-hidden="true"
-          />
           <div className="relative">
             <p className="animate-rise font-display text-[2.25rem] font-bold leading-none tracking-tight text-ink md:text-[2.8125rem]">
               Diteboho Kotoane Attorneys Inc.
@@ -110,11 +96,11 @@ function HomePage() {
             </div>
             <div className="md:col-span-5">
               <img
-                src={assetUrl(founderAsset)}
+                src={assetUrl(founderBrandAsset)}
                 alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
                 loading="lazy"
-                width={1024}
-                height={1280}
+                width={1080}
+                height={1080}
                 className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
               />
             </div>
