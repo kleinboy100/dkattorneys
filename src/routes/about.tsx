@@ -25,7 +25,7 @@ function AboutPage() {
         <div className="grid items-start gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <img
-              src={assetUrl(founderBrandAsset)}
+              src={assetUrl(founderDeskAsset)}
               alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
               width={1080}
               height={1080}
