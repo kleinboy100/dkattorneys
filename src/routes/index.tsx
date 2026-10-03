@@ -81,7 +81,7 @@ function HomePage() {
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid items-end gap-12 md:grid-cols-12">
-            <div className="md:col-span-6">
+            <div className="md:col-span-7">
               <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
                 Practice Areas
               </p>
@@ -93,7 +93,7 @@ function HomePage() {
                 clarity and integrity.
               </p>
             </div>
-            <div className="md:col-span-6">
+            <div className="md:col-span-5">
               <img
                 src={assetUrl(founderBrandAsset)}
                 alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."

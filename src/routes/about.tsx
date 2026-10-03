@@ -173,7 +173,7 @@ function TeamSection() {
         <h2 className="mt-5 max-w-2xl text-balance font-display text-3xl font-bold italic tracking-tight text-ink md:text-4xl">
           The people behind the practice.
         </h2>
-        <div className="mt-10">
+        <div className="mt-10 grid gap-6 md:grid-cols-5">
           <img
             src={assetUrl(teamAsset)}
             alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
