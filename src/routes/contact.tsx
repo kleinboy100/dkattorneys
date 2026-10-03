@@ -111,19 +111,6 @@ function ContactPage() {
                 Schedule a Consultation
               </a>
             </div>
-            <div className="mt-10">
-              <img
-                src={assetUrl(teamAsset)}
-                alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
-                width={1200}
-                height={800}
-                loading="lazy"
-                className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
-              />
-              <p className="mt-3 font-sans text-xs text-paper/45">
-                The Diteboho Kotoane Attorneys Inc. team in Klerksdorp.
-              </p>
-            </div>
           </div>
           <div className="md:col-span-7">
             <a
@@ -150,6 +137,19 @@ function ContactPage() {
               36 Leask Street, Klerksdorp CBD, 2570 · Click the map to open Google Maps.
             </p>
           </div>
+        </div>
+        <div className="mt-12">
+          <img
+            src={assetUrl(teamAsset)}
+            alt="The team of Diteboho Kotoane Attorneys Inc. at their Klerksdorp offices"
+            width={1920}
+            height={1280}
+            loading="lazy"
+            className="w-full rounded-lg outline outline-1 -outline-offset-1 outline-white/10"
+          />
+          <p className="mt-3 font-sans text-xs text-paper/45">
+            The Diteboho Kotoane Attorneys Inc. team in Klerksdorp.
+          </p>
         </div>
       </div>
     </section>
