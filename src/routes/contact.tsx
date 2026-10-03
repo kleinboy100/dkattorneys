@@ -151,6 +151,7 @@ function ContactPage() {
             The Diteboho Kotoane Attorneys Inc. team in Klerksdorp.
           </p>
         </div>
+      </div>
     </section>
   );
 }
