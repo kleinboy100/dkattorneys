@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import founderAsset from "../assets/founder.jpg.asset.json";
+import founderBrandAsset from "../assets/founder-brand.jpg.asset.json";
 import teamAsset from "../assets/team.jpg.asset.json";
 import { assetUrl } from "../lib/asset-url";
 
@@ -25,10 +25,10 @@ function AboutPage() {
         <div className="grid items-start gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <img
-              src={assetUrl(founderAsset)}
+              src={assetUrl(founderBrandAsset)}
               alt="Diteboho Patrick Kotoane, Director and Founder of Diteboho Kotoane Attorneys Inc."
-              width={1024}
-              height={1280}
+              width={1080}
+              height={1080}
               className="aspect-[4/5] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
             />
             <p className="mt-3 font-sans font-semibold text-ink">
