@@ -144,7 +144,7 @@ function ContactPage() {
               width={1200}
               height={800}
               loading="lazy"
-              className="aspect-[4/3] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
+              className="h-full min-h-[420px] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/10"
             />
             <p className="mt-3 font-sans text-xs text-paper/45">
               The Diteboho Kotoane Attorneys Inc. team in Klerksdorp.
