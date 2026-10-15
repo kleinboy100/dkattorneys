@@ -100,6 +100,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
       },
     ],
+    scripts: [
+      {
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4449020882721592",
+        crossOrigin: "anonymous",
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -248,6 +255,9 @@ function Footer() {
             </svg>
             Diteboho Kotoane Attorneys Inc.
           </a>
+          <Link to="/privacy" className="text-paper/70 transition-colors hover:text-paper">
+            Privacy Policy
+          </Link>
           <p>
             © {new Date().getFullYear()} Diteboho Kotoane Attorneys Inc. · Klerksdorp, South Africa
           </p>
